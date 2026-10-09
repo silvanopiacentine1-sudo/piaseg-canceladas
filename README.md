@@ -1,13 +1,7 @@
-# Piaseg · Apólices Canceladas
+# Piaseg · Apólices Canceladas (desativado)
 
-Painel para cada franqueado acompanhar os clientes que tiveram apólice cancelada (relatório
-`RptDocsEmitidos` de cancelamentos do Quiver) e informar o motivo de cada cancelamento. O gestor tem a visão
-geral mês a mês (pela data do cancelamento) por franqueado.
+Em 2026-10-09 este painel foi incorporado ao sistema de apólices não renovadas:
+https://github.com/silvanopiacentine1-sudo/piaseg-apolices (aba "Canceladas", rotas `/canceladas` no backend).
 
-Mesmo conceito do painel de Apólices não Renovadas (`piaseg-apolices`).
-
-- `backend/` — FastAPI + PostgreSQL (Render). Login com o mesmo usuário/senha do Portal do Franqueado
-  (`piaseg_usuarios` em `https://www.piaseg.com.br/get_data.php`, sha256).
-- `frontend/` — Next.js (Vercel). `NEXT_PUBLIC_API_URL` aponta para o backend.
-
-A planilha é importada pelo gestor na tela "Importar e acessos" (nenhum dado de cliente fica neste repositório).
+O frontend daqui só redireciona https://piaseg-canceladas.vercel.app para https://piaseg-apolices.vercel.app/canceladas.
+O backend e o banco deste repositório foram desligados.
